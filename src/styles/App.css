@@ -1,0 +1,183 @@
+.info-popup-cont {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.info-popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 12px 10px 12px 16px;
+    max-width: 460px;
+    min-width: 240px;
+    gap: 12px;
+    border-radius: 7px;
+    transition: top 0.5s;
+    z-index: 1000000;
+
+    p {
+        text-wrap: wrap !important;
+        font-size: 16px;
+        line-height: 104%;
+    }
+
+    svg {
+        min-width: 20px;
+    }
+}
+
+.info-popup-close-box {
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.info-popup-close {
+    max-width: fit-content;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 100%;
+
+    svg {
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+
+
+    }
+
+}
+
+.info-popup-close:hover {
+    max-width: fit-content;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: $Dark;
+}
+
+.info-popup-text {
+    color: #fff;
+}
+
+.info-popup-icon {
+    width: 20px;
+    color: #fff;
+    stroke-width: 2px;
+}
+
+.info-popup-error {
+    background-color: #dd0000;
+}
+
+.info-popup-success {
+    background-color: #00dd00;
+}
+
+.info-popup-loading {
+    background-color: #0000dd;
+}
+.rounded-top{
+    border-top-right-radius: 1000px;
+    border-top-left-radius: 1000px;
+    padding-top: 100px;
+  
+}
+.top-n-5{
+    top:-4.8rem;
+
+}
+.high-screen{
+    height: 100vh;
+}
+
+/* Checkbox input styling */
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: #A7C957;
+    /* Change this color to your preferred check color */
+    border-color: #A7C957;
+}
+
+.custom-checkbox:focus {
+    box-shadow: 0 0 0 3px #606C38;
+    /* Green focus ring */
+}
+
+/* Label styling */
+.custom-label {
+    color: #4b5563;
+    /* Default text color */
+    font-weight: 500;
+    /* Medium font weight */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.custom-label-error {
+    color: #f87171;
+    /* Red color for errors */
+}
+
+/* Error message styling */
+.custom-error-message {
+    color: #f87171;
+    font-size: 0.875rem;
+    /* Small text size */
+    margin-left: 8px;
+}
+.table{
+    width: 0px;
+    transition: all 0.7s;
+    min-height: 480px;
+}
+
+
+          .table-row {
+              min-width: 750px;
+              display: flex;
+          }
+@media (max-width: 1279px) {
+
+    /* Your styles for screens smaller than 1280px */
+.high-screen{
+    height: auto;
+}
+
+}
+
+@media (max-width: 950px) {
+
+    /* Your styles for screens smaller than 1280px */
+
+    .table {
+
+        overflow-x: scroll;
+    }
+
+  
+}
+

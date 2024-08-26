@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bg-green-default{
+    background-color: #606C38;
+}
+.text-green-default {
+    color: #606C38;
+}
+.text-green-default:hover {
+    color: #A7C957;
+}
+.text-green-default-2 {
+    color: #A7C957;
+}
+.border-green-default {
+    border-color: #A7C957;
+}
+
+.dm-sans-700 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.border-green-default-focus {
+    border-color: #A7C957;
+    box-shadow: 0 0 01px #A7C957;
+    border-width: 2px;
+}
+/* Custom thin scrollbar for the entire site */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Adjust the width for vertical scrollbars */
+    height: 5px;
+    /* Adjust the height for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a0aec0;
+    /* Customize the thumb (scroll handle) color */
+    border-radius: 8px;
+    /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #edf2f7;
+    /* Customize the track (background) color */
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    /* Hide the arrows */
+}
