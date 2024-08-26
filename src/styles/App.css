@@ -153,6 +153,7 @@
     width: 0px;
     transition: all 0.7s;
     min-height: 480px;
+    display: none;
 }
 
 
